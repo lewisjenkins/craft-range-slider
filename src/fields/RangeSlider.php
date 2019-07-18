@@ -43,7 +43,7 @@ class RangeSlider extends Field
      */
     public static function displayName(): string
     {
-        return Craft::t('craft-range-slider', 'RangeSlider');
+        return Craft::t('craft-range-slider', 'Range Slider');
     }
 
     // Public Methods
