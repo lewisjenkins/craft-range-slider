@@ -1,0 +1,40 @@
+{
+    "name": "lewisjenkins/craft-range-slider",
+    "description": "...",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft range slider"
+    ],
+    "support": {
+        "docs": "https://github.com/lewisjenkins/craft-range-slider/blob/master/README.md",
+        "issues": "https://github.com/lewisjenkins/craft-range-slider/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lewis Jenkins",
+            "homepage": "https://lj.io"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "lewisjenkins\\craftrangeslider\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Craft Range Slider",
+        "handle": "craft-range-slider",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/CHANGELOG.md",
+        "class": "lewisjenkins\\craftrangeslider\\CraftRangeSlider"
+    }
+}
