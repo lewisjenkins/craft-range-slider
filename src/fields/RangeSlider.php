@@ -1,104 +1,34 @@
 <?php
-/**
- * Craft Range Slider plugin for Craft CMS 3.x
- *
- * ...
- *
- * @link      https://lj.io
- * @copyright Copyright (c) 2019 Lewis Jenkins
- */
 
 namespace lewisjenkins\craftrangeslider\fields;
 
-use lewisjenkins\craftrangeslider\CraftRangeSlider;
 use lewisjenkins\craftrangeslider\assetbundles\rangesliderfield\RangeSliderFieldAsset;
 
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
-use craft\helpers\Db;
 use yii\db\Schema;
-use craft\helpers\Json;
 
-/**
- * @author    Lewis Jenkins
- * @package   CraftRangeSlider
- * @since     1.0.0
- */
 class RangeSlider extends Field
 {
-    // Public Properties
-    // =========================================================================
-
-    /**
-     * @var string
-     */
-    public $options = 'type: "double",
-min: 0,
+    public $options = 'min: 100,
 max: 1000,
-from: 200,
-to: 500,
-grid: true';
+from: 550';
     
     public $initialRows = 8;
 
-    // Static Methods
-    // =========================================================================
-
-    /**
-     * @inheritdoc
-     */
     public static function displayName(): string
     {
         return Craft::t('craft-range-slider', 'LJ Range Slider');
     }
 
-    // Public Methods
-    // =========================================================================
-
-    /**
-     * @inheritdoc
-     */
-    public function rules()
-    {
-        $rules = parent::rules();
-        $rules = array_merge($rules, [
-        //    ['someAttribute', 'string'],
-        //    ['someAttribute', 'default', 'value' => 'Some Default'],
-        ]);
-        return $rules;
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function getContentColumnType(): string
     {
         return Schema::TYPE_TEXT;
     }
 
-    /**
-     * @inheritdoc
-     */
-    public function normalizeValue($value, ElementInterface $element = null)
-    {
-        return $value;
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function serializeValue($value, ElementInterface $element = null)
-    {
-        return parent::serializeValue($value, $element);
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function getSettingsHtml()
     {
-        // Render the settings template
         return Craft::$app->getView()->renderTemplate(
             'craft-range-slider/_components/fields/RangeSlider_settings',
             [
@@ -107,15 +37,11 @@ grid: true';
         );
     }
 
-    /**
-     * @inheritdoc
-     */
     public function getInputHtml($value, ElementInterface $element = null): string
     {
 	    $view = Craft::$app->getView();
         $view->registerAssetBundle(RangeSliderFieldAsset::class);
 
-        // Get our id and namespace
         $id = $view->formatInputId($this->handle);
         $namespacedId = $view->namespaceInputId($id);
 
@@ -131,7 +57,7 @@ grid: true';
         
         $values = explode(';', $value);
         
-		$js ="
+		$js = "
 			$('#" . $namespacedId . "').ionRangeSlider({" . $options . "});
 			var instance = $('#" . $namespacedId . "').data('ionRangeSlider');
 			var values = instance.options.values.map(String);
@@ -147,7 +73,12 @@ grid: true';
 					});
 			};
 			";
+			
         $view->registerJs($js);
+        
+        $css = "#" . $namespacedId . " { display: none; }";
+        
+        $view->registerCss($css);
 
         return $view->renderTemplate(
             'craft-range-slider/_components/fields/RangeSlider_input',
