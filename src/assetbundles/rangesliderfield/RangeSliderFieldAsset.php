@@ -36,11 +36,11 @@ class RangeSliderFieldAsset extends AssetBundle
         ];
 
         $this->js = [
-            'js/RangeSlider.js',
+            'js/ion.rangeSlider.min.js',
         ];
 
         $this->css = [
-            'css/RangeSlider.css',
+            'css/ion.rangeSlider.min.css',
         ];
 
         parent::init();

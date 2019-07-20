@@ -1,26 +1,14 @@
-{# @var craft \craft\web\twig\variables\CraftVariable #}
-{#
-/**
- * Craft Range Slider plugin for Craft CMS
- *
- * RangeSlider Field Settings
- *
- * @author    Lewis Jenkins
- * @copyright Copyright (c) 2019 Lewis Jenkins
- * @link      https://lj.io
- * @package   CraftRangeSlider
- * @since     1.0.0
- */
-#}
-
 {% import "_includes/forms" as forms %}
 
-{% do view.registerAssetBundle("lewisjenkins\\craftrangeslider\\assetbundles\\craftrangeslider\\CraftRangeSliderAsset") %}
+{% do view.registerAssetBundle("lewisjenkins\\craftrangeslider\\assetbundles\\rangesliderfield\\RangeSliderFieldAsset") %}
 
-{{ forms.textField({
-    label: 'Some Attribute',
-    instructions: 'Enter some attribute here.',
-    id: 'someAttribute',
-    name: 'someAttribute',
-    value: field['someAttribute']})
-}}
+{% set config = {
+    id: 'options',
+    name: 'options',
+    value: field.options,
+    class: 'nicetext code',
+    rows: field.initialRows
+} %}
+
+
+{{ forms.textarea(config) }}
