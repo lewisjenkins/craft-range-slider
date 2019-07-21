@@ -16,13 +16,13 @@ This plugin adds the following fieldtype:
 
 - LJ Range Slider
 
-![Screenshot](resources/img/1.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/1.png)
 
 #### Simple start, basic params
 
 Set min value, max value and start point.
 
-![Screenshot](resources/img/2.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/2.png)
 
 ```
 min: 100,
@@ -32,7 +32,7 @@ from: 550
 
 Set type to double, specify range, show grid and add a prefix "$".
 
-![Screenshot](resources/img/3.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/3.png)
 
 ```
 type: "double",
@@ -48,7 +48,7 @@ prefix: "$"
 
 Set up range with negative values.
 
-![Screenshot](resources/img/4.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/4.png)
 
 ```
 type: "double",
@@ -61,7 +61,7 @@ to: 500
 
 Force fractional values, using fractional step 0.1.
 
-![Screenshot](resources/img/5.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/5.png)
 
 ```
 type: "double",
@@ -77,7 +77,7 @@ step: 0.1
 
 Hide min and max labels
 
-![Screenshot](resources/img/21.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/21.png)
 
 ```
 min: 100,
@@ -88,7 +88,7 @@ hide_min_max: true
 
 Hide from and to labels
 
-![Screenshot](resources/img/22.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/22.png)
 
 ```
 min: 100,
@@ -102,7 +102,7 @@ hide_from_to: true
 
 When using custom values, FROM and TO should be zero-based index of values array. So in the example below 0=0, 1=10, 2=100, 3=1000, 4=10000 etc.
 
-![Screenshot](resources/img/6.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/6.png)
 
 ```
 type: "double",
@@ -114,7 +114,7 @@ values: [0, 10, 100, 1000, 10000, 100000, 1000000]
 
 Values array could be anything, even strings.
 
-![Screenshot](resources/img/7.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/7.png)
 
 ```
 grid: true,
@@ -141,7 +141,7 @@ values: [
 
 Improve readability of big numbers, like 1000000.
 
-![Screenshot](resources/img/8.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/8.png)
 
 ```
 grid: true,
@@ -157,7 +157,7 @@ prettify_separator: ","
 
 Adding currency symbol and + symbol to the maximum number.
 
-![Screenshot](resources/img/9.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/9.png)
 
 ```
 grid: true,
@@ -169,7 +169,7 @@ max_postfix: "+",
 prefix: "$"
 ```
 
-![Screenshot](resources/img/10.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/10.png)
 
 ```
 grid: true,
@@ -182,7 +182,7 @@ postfix: " €"
 
 Using prefix and postfix at the same time.
 
-![Screenshot](resources/img/11.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/11.png)
 
 ```
 grid: true,
@@ -198,7 +198,7 @@ postfix: " years"
 
 Divide the grid.
 
-![Screenshot](resources/img/12.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/12.png)
 
 ```
 grid: true,
@@ -208,7 +208,7 @@ from: 20,
 grid_num: 4
 ```
 
-![Screenshot](resources/img/13.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/13.png)
 
 ```
 grid: true,
@@ -222,7 +222,7 @@ grid_num: 5
 
 Using sliders callbacks.
 
-![Screenshot](resources/img/19.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/19.png)
 
 ```
 min: 0,
@@ -253,7 +253,7 @@ onFinish: function (data) {
 
 The Slider Parameters field can use Twig logic and even Craft element queries.
 
-![Screenshot](resources/img/20.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/20.png)
 
 ```
 {% set values %}
@@ -278,7 +278,7 @@ You can even fetch your Slider Parameters from a template.
 
 Big skin
 
-![Screenshot](resources/img/14.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/14.png)
 
 ```
 min: 100,
@@ -289,7 +289,7 @@ skin: "big"
 
 Modern skin
 
-![Screenshot](resources/img/15.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/15.png)
 
 ```
 min: 100,
@@ -300,7 +300,7 @@ skin: "modern"
 
 Sharp skin
 
-![Screenshot](resources/img/16.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/16.png)
 
 ```
 min: 100,
@@ -311,7 +311,7 @@ skin: "sharp"
 
 Round skin
 
-![Screenshot](resources/img/17.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/17.png)
 
 ```
 min: 100,
@@ -322,7 +322,7 @@ skin: "round"
 
 Square skin
 
-![Screenshot](resources/img/18.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/18.png)
 
 ```
 min: 100,
@@ -339,7 +339,7 @@ See the original [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider) pr
 
 "Single" Range Slider fields return a single FROM value.
 
-![Screenshot](resources/img/2.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/2.png)
 
 ```
 {{ entry.myRangeSliderField }}
@@ -348,7 +348,7 @@ See the original [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider) pr
 
 "Double" Range Slider fields returns FROM and TO values, separated by ; character.
 
-![Screenshot](resources/img/3.png)
+![Screenshot](https://raw.githubusercontent.com/lewisjenkins/craft-range-slider/master/resources/img/3.png)
 
 ```
 {{ entry.myRangeSliderField }}
