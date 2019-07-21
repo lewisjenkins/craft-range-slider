@@ -366,6 +366,6 @@ See the original [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider) pr
 
 ---
 
-This plugin is based on the original [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider) plugin [[MIT licence](https://github.com/IonDen/ion.rangeSlider/blob/master/License.md)], with thanks to the original developer.
+This plugin is based on the [ion.rangeSlider](https://github.com/IonDen/ion.rangeSlider) plugin [[MIT licence](https://github.com/IonDen/ion.rangeSlider/blob/master/License.md)], with thanks to the original developer.
 
 Brought to you by [Lewis Jenkins](https://lj.io).
