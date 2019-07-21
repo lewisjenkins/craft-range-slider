@@ -1,14 +1,11 @@
 {% import "_includes/forms" as forms %}
 
-{% do view.registerAssetBundle("lewisjenkins\\craftrangeslider\\assetbundles\\rangesliderfield\\RangeSliderFieldAsset") %}
-
-{% set config = {
+{{ forms.textareaField({
+	label: "Slider Parameters"|t('app'),
+	instructions: "See the [documentation](https://github.com/lewisjenkins/craft-range-slider) for examples."|t('app'),
     id: 'options',
     name: 'options',
     value: field.options,
     class: 'nicetext code',
     rows: field.initialRows
-} %}
-
-
-{{ forms.textarea(config) }}
+}) }}
