@@ -27,7 +27,7 @@ from: 550';
         return Schema::TYPE_TEXT;
     }
 
-    public function getSettingsHtml()
+    public function getSettingsHtml(): ?string
     {
         return Craft::$app->getView()->renderTemplate(
             'craft-range-slider/_components/fields/RangeSlider_settings',
