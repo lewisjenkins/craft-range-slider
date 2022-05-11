@@ -2,7 +2,7 @@
     "name": "lewisjenkins/craft-range-slider",
     "description": "An easy-to-use, flexible and responsive range slider for Craft CMS.",
     "type": "craft-plugin",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "keywords": [
         "craft",
         "cms",
