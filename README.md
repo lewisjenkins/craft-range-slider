@@ -1,10 +1,10 @@
-# LJ Range Slider plugin for Craft CMS 4.x
+# LJ Range Slider plugin for Craft CMS
 
 An easy-to-use, flexible and responsive range slider for Craft CMS.
 
 ## Requirements
 
-This plugin requires Craft CMS 4.0.0 or later.
+This plugin requires Craft 4 or 5.
 
 ## Installation
 
